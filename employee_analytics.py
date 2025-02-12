@@ -17,7 +17,7 @@ from scipy.stats import kurtosis, skew
 def load_data():
     file_path = 'Employee.xlsx'
     try:
-        df = pd.read_excel(file_path, sheet_name="Employee Sample Data")
+        df = pd.read_excel(file_path, sheet_name="Employee Sample Data for Analytics")
         return df
     except Exception as e:
         st.error(f"Error loading data: {e}")
